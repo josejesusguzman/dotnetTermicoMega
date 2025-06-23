@@ -21,7 +21,7 @@ public sealed class CsWriter
         var file = Path.Combine(_path, $"{DateTime.Today:yyyyMMdd}.csv");
 
         var sb = new StringBuilder()
-            .Append(s.Timestamp.ToString("0")).Append(';')
+            .Append(s.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")).Append(';')
             .Append(s.CpuTemp).Append(';')
             .Append(s.GpuTemp).Append(';')
             .Append(s.CpuLoad).Append(';')
